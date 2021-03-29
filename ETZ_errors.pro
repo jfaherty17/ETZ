@@ -1,8 +1,8 @@
-pro transits_errors,nums
+pro transits_errors,nums,USEYEAR
 
 ;nums is the total number of iterations used to determine uncertainty range in ETZ (and rETZ) entry and exit time
 
-path='/Users/jfaherty/Dropbox/For-Lisa/'
+path='/Users/jfaherty/ETZStars/'
 ;;;-------------------------------------
 ;;;SETTING UP FOR PLOTTING
 ;;;-------------------------------------
@@ -17,7 +17,7 @@ device,isolatin1=1
 ;;;-------------------------------------
 ;;;READING IN ALL PARAMETERS
 ;;;-------------------------------------
-readcol,path+'Errors2.txt',F='(A,D,D,D,D,F,F,F,F,F,F)',designation,RA,RA_ERR,DEC,DEC_Err,parallax,parallaxe,pmra,pmrae,pmdec,pmdece
+readcol,path+'Errors3.txt',F='(A,D,D,D,D,F,F,F,F,F,F)',designation,RA,RA_ERR,DEC,DEC_Err,parallax,parallaxe,pmra,pmrae,pmdec,pmdece
 ra_err=ra_err/(3600.*1000.) & dec_err=dec_err/(3600.*1000.)  ;;CONVERT RA AND DEC ERROR FROM DEG TO MAS
 distance=double(1000.)/parallax
 distanceh=double(1000.)/(parallax+parallaxe)
@@ -35,7 +35,7 @@ uvw_errors,ra, dec, pmra*1000. ,pmdec*1000., vrad,distance,ra_err, dec_err,pmrae
 ;;;-------------------------------------
 ;;;BEGIN THE PROPOGATION OF TIME OVER THE GIVEN INTERVAL
 ;;;-------------------------------------
-USEYEAR=5000 ;;THE CHOSEN INTERVAL OF TIME FORWARD AND BACKWARD TO SEARCH FOR THE ETZ ENTRY AND EXIT
+;; INPUT USEYEAR IS THE CHOSEN INTERVAL OF TIME FORWARD AND BACKWARD TO SEARCH FOR THE ETZ ENTRY AND EXIT
 index=findgen(USEYEAR)
 xline=findgen(USEYEAR)
 xline2=-xline
@@ -46,7 +46,7 @@ xline=xline[so] ;;A CREATED TIMELINE TO BE USED IN THE CALCULATION
 ;;;-------------------------------------
 ;;;OPEN FILE FOR ERROR PROPOGATION
 ;;;-------------------------------------
-openw,lun,path+'Error-Final.txt',/get_lun
+openw,lun,path+'Error-Final2.txt',/get_lun
 
 ;;;-------------------------------------
 ;;;LOOP OVER ALL STARS, PROPOGATING WITH UVW INFLUENCED CHANGES IN XYZ AND DETERMINE ETZ ENTRY AND EXIT
@@ -83,7 +83,7 @@ for j=0,n_elements(ra)-1 do begin
 ;;;-------------------------------------
 ;;;PLOT THE TWO ZONES FOR VISUAL INSPECTION
 ;;;-------------------------------------
-            device,filename=path+'Error3/Obj_'+string(designation[j])+'.eps',/encapsulated,color=1 ;;HAVE TO MAKE THIS DIRECTORY TO STORE PLOTS
+            device,filename=path+'Error4/Obj_'+string(designation[j])+'.eps',/encapsulated,color=1 ;;HAVE TO MAKE THIS DIRECTORY TO STORE PLOTS
             plot,elong,elat,xstyle=1,ystyle=1,xtitle='Ecliptic Long',ytitle='Ecliptic Latitude',title=Designation[j],yrange=[-0.35,0.35],xrange=[min(elong)-.01,max(elong)+.01]
             oplot,[0,500],[-0.264,-0.264]
             oplot,[0,500],[0.264,0.264]
@@ -145,7 +145,8 @@ for j=0,n_elements(ra)-1 do begin
 ;;;-------------------------------------
 ;;;PRINT VALUES TO SCREEN AND TO FILE
 ;;;-------------------------------------
-
+this=where(start262_B eq 0.0,c)
+if c gt 0 then remove,where(start262_B eq 0.0),start262_B,end262_B,start132_B,end132_B
 print,j,designation[j],ra[j],dec[j],distance[j],official264s,official264e,official132s,official132e,median(start262_B),median(end262_B),median(start132_B),median(end132_B),stdev(start262_B),stdev(end262_B),stdev(start132_B),stdev(end132_B),nums,F='(I10,A40,F20.5,F20.5,F20.5,I10,I10,I10,I10,I10,I10,I10,I10,F10.2,F10.2,F10.2,F10.2,I10)
 
 printf,lun,j,designation[j],ra[j],dec[j],distance[j],official264s,official264e,official132s,official132e,median(start262_B),median(end262_B),median(start132_B),median(end132_B),stdev(start262_B),stdev(end262_B),stdev(start132_B),stdev(end132_B),nums,F='(I10,A40,F20.5,F20.5,F20.5,I10,I10,I10,I10,I10,I10,I10,I10,F10.2,F10.2,F10.2,F10.2,I10)
