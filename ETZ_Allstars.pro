@@ -1,6 +1,6 @@
 pro transits,USEYEAR
 
-path='/Users/jfaherty/Dropbox/For-Lisa/'
+path='/Users/jfaherty/ETZStars/'
 ;;;-------------------------------------
 ;;;SETTING UP FOR PLOTTING
 ;;;-------------------------------------
