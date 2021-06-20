@@ -2,62 +2,62 @@ Title: Past, Present and Future Stars that can see Earth as a transiting Exoplan
 Authors: Lisa Kaltenegger & Jacqueline Faherty
 Table: 2
 ================================================================================
-Byte-by-byte Description of file: datafile.txt
+Byte-by-byte Description of file: Table2-MRT.txt
 --------------------------------------------------------------------------------
    Bytes Format Units     Label                         Explanations
 --------------------------------------------------------------------------------
-   1- 14 A14    ---       EXOName                       Exoplanet Host Star Common Name
-  16- 34 I19    ---       SOURCE-ID                     Gaia EDR3 source ID
-  36- 47 F12.8  deg       RA                            Right Ascension ep 2016.0
-  49- 59 F11.9  deg     E_RA                            Uncertainty in Right Ascension ep 2016.0
-  61- 73 F13.9  deg       DEC                           Declination ep 2016.0
-  75- 85 F11.9  deg     E_DEC                           Uncertainty in Declination ep 2016.0
-  87- 98 F12.8  mas       PARALLAX                      Parallax
- 100-110 F11.9  mas     E_PARALLAX                      Parallax Error
- 112-117 F6.3   pc        DISTANCE                      1 over parallax distance
- 119-131 F13.8  mas/yr    PMRA                          Proper Motion in Right Ascension
- 133-143 F11.9  mas/yr  E_PMRA                          Proper Motion in Right Ascension Error
- 145-158 F14.8  mas/yr    PMDEC                         Proper Motion in Declination
- 160-170 F11.9  mas/yr  E_PMDEC                         Proper Motion in Declination Error
- 172-181 F10.7  mag       PHOT-G-MEAN-MAG               Gaia G Band magnitude
- 183-192 F10.5  ---       PHOT-G-MEAN-FLUX-OVER-ERROR   Gaia G Band flux to flux error ratio
- 194-202 F9.6   mag       PHOT-BP-MEAN-MAG              Gaia BP Band magnitude
- 204-214 F11.6  ---       PHOT-BP-MEAN-FLUX-OVER-ERROR  Gaia BP Band flux to flux error ratio
- 216-224 F9.6   mag       PHOT-RP-MEAN-MAG              Gaia RP Band magnitude
- 226-235 F10.5  ---       PHOT-RP-MEAN-FLUX-OVER-ERROR  Gaia RP Band flux to flux error ratio
- 237-246 F10.8  ---       RUWE                          Renormalised  Error
- 248-252 I5     yr        START-.264                    Years from 2016 epoch when the star enters the ETZ
- 254-254 I1     yr      E_START-.264                    Uncertainty on ETZ entrance
- 256-259 I4     yr        END-.264                      Years from 2016 epoch when the star exits the ETZ
- 261-261 I1     yr      E_END-.264                      Uncertainty on ETZ exit
- 263-267 I5     yr        TOTAL-.264                    Total time a star spends in the ETZ
- 269-274 A6     ---       When-.264                     Note as to whether it is in the ETZ in the Past, Future or Both
- 276-278 A3     ---       BOTH-ETZ?                     Note of whether it is in both ETZ and rETZ
- 280-284 I5     yr        START-.162                    Years from 2016 epoch when the star enters the rETZ
- 286-286 I1     yr      E_START-.162                    Uncertainty on rETZ entrance
- 288-292 I5     yr        END-.162                      Years from 2016 epoch when the star exits the rETZ
- 294-294 I1     yr      E_END-.162                      Uncertainty on rETZ exit
- 296-299 I4     yr        TOTAL-.162                    Total time a star spends in the rETZ
- 301-306 A6     ---       When-.132                     Note as to whether it is in the rETZ in the Past, Future or Both
- 308-311 I4     K         TEFF                          Effective temperature
- 313-315 I3     K       E_TEFF                          Effective temperature uncertainty
- 317-317 I1     ---       TEFF-REF                      Effective temperature reference
- 319-324 F6.4   solMass   MASS                          Mass
- 326-331 F6.4   solMass E_MASS                          Mass uncertainty
- 333-333 I1     ---       MASS-REF                      Mass reference
- 335-340 F6.4   solRad    RADIUS                        Radius
- 342-347 F6.4   solRad  E_RADIUS                        Radius error
- 349-349 I1     ---       RADIUS-REF                    Radius reference
- 351-361 A11    solLum    LBOL                          Bolometric luminosity
- 363-373 A11    solLum  E_LBOL                          Bolometric luminosity uncertainty
- 375-375 I1     ---       LBOL-REF                      Bolometric luminosity reference
- 377-385 F9.6   ---       METALLICITY                   Metallicity
- 387-386 I0     ---     E_METALLICITY                   Metallicity uncertainty
- 388-388 I1     ---       METALLICITY-REF               Metallicity reference
- 390-395 F6.4   cm/s^2    LOGG                          Log g
- 397-402 F6.4   cm/s^2  E_LOGG                          Log g uncertainty
- 404-404 I1     ---       LOGG-REF                      Log g reference
- 406-407 A2     ---       SpT                           SpT Estimate from Gaia CMD position
+   1- 15 A15    ---       EXOName                       Exoplanet Host Star Common Name
+  17- 35 I19    ---       SOURCE-ID                     Gaia EDR3 source ID
+  37- 47 F11.7  deg       RA                            Right Ascension ep 2016.0
+  49- 57 F9.7   deg     E_RA                            Uncertainty in Right Ascension ep 2016.0
+  59- 69 F11.7  deg       DEC                           Declination ep 2016.0
+  71- 79 F9.7   deg     E_DEC                           Uncertainty in Declination ep 2016.0
+  81- 88 F8.4   mas       PARALLAX                      Parallax
+  90- 95 F6.4   mas     E_PARALLAX                      Parallax Error
+  97-101 F5.2   pc        DISTANCE                      1 over parallax distance
+ 103-111 F9.4   mas/yr    PMRA                          Proper Motion in Right Ascension
+ 113-118 F6.4   mas/yr  E_PMRA                          Proper Motion in Right Ascension Error
+ 120-129 F10.4  mas/yr    PMDEC                         Proper Motion in Declination
+ 131-136 F6.4   mas/yr  E_PMDEC                         Proper Motion in Declination Error
+ 138-142 F5.2   mag       PHOT-G-MEAN-MAG               Gaia G Band magnitude
+ 144-150 F7.2   ---       PHOT-G-MEAN-FLUX-OVER-ERROR   Gaia G Band flux to flux error ratio
+ 152-156 F5.2   mag       PHOT-BP-MEAN-MAG              Gaia BP Band magnitude
+ 158-164 F7.2   ---       PHOT-BP-MEAN-FLUX-OVER-ERROR  Gaia BP Band flux to flux error ratio
+ 166-170 F5.2   mag       PHOT-RP-MEAN-MAG              Gaia RP Band magnitude
+ 172-178 F7.2   ---       PHOT-RP-MEAN-FLUX-OVER-ERROR  Gaia RP Band flux to flux error ratio
+ 180-184 F5.3   ---       RUWE                          Renormalised  Error
+ 186-190 I5     yr        START-.264                    Years from 2016 epoch when the star enters the ETZ
+ 192-192 I1     yr      E_START-.264                    Uncertainty on ETZ entrance
+ 194-197 I4     yr        END-.264                      Years from 2016 epoch when the star exits the ETZ
+ 199-199 I1     yr      E_END-.264                      Uncertainty on ETZ exit
+ 201-205 I5     yr        TOTAL-.264                    Total time a star spends in the ETZ
+ 207-212 A6     ---       When-.264                     Note as to whether it is in the ETZ in the Past, Future or Both
+ 214-216 A3     ---       BOTH-ETZ?                     Note of whether it is in both ETZ and rETZ
+ 218-222 I5     yr        START-.162                    Years from 2016 epoch when the star enters the rETZ
+ 224-224 I1     yr      E_START-.162                    Uncertainty on rETZ entrance
+ 226-230 I5     yr        END-.162                      Years from 2016 epoch when the star exits the rETZ
+ 232-232 I1     yr      E_END-.162                      Uncertainty on rETZ exit
+ 234-237 I4     yr        TOTAL-.162                    Total time a star spends in the rETZ
+ 239-244 A6     ---       When-.162                     Note as to whether it is in the rETZ in the Past, Future or Both
+ 246-249 I4     K         TEFF                          Effective temperature
+ 251-253 I3     K       E_TEFF                          Effective temperature uncertainty
+ 255-257 I3     ---       TEFF-REF                      Effective temperature reference
+ 259-265 F7.3   solMass   MASS                          Mass
+ 267-273 F7.3   solMass E_MASS                          Mass uncertainty
+ 275-277 I3     ---       MASS-REF                      Mass reference
+ 279-285 F7.3   solRad    RADIUS                        Radius
+ 287-293 F7.3   solRad  E_RADIUS                        Radius error
+ 295-297 I3     ---       RADIUS-REF                    Radius reference
+ 299-308 F10.6  solLum    LBOL                          Bolometric luminosity
+ 310-319 F10.6  solLum  E_LBOL                          Bolometric luminosity uncertainty
+ 321-323 I3     ---       LBOL-REF                      Bolometric luminosity reference
+ 325-332 F8.4   ---       METALLICITY                   Metallicity
+ 334-336 I3     ---     E_METALLICITY                   Metallicity uncertainty
+ 338-340 I3     ---       METALLICITY-REF               Metallicity reference
+ 342-348 F7.3   cm/s^2    LOGG                          Log g
+ 350-356 F7.3   cm/s^2  E_LOGG                          Log g uncertainty
+ 358-360 I3     ---       LOGG-REF                      Log g reference
+ 362-363 A2     ---       SpT                           SpT Estimate from Gaia CMD position
 --------------------------------------------------------------------------------
 References: 
 1=Stassun, K. G., Oelkers, R. J., Paegert, M., et al. 2019, AJ,158, 138
@@ -65,10 +65,10 @@ References:
 3=Anders, F., Khalatyan, A., Chiappini, C., et al. 2019, A&A, 628, A94
 4=Cifuentes, C., Caballero, J. A., Cort ́es-Contreras, M., et al. 2020, A&A, 642, A115
 --------------------------------------------------------------------------------
-Ross-128       3796072592206250624 176.93768800 0.027359888   0.799119970 0.019837030 296.30530790 0.030185517  3.375  607.29907670 0.034329640 -1223.02835500 0.022648253  9.6010000 1360.63240 11.361026  659.644500  8.327767 1606.42290 1.08258190 -3057 0 -900 0  2158 Past   yes -2517 0 -1440 0 1078 Past   3100     4 0.2023 0.0113 4 0.2145 0.0072 4 0.00382733  7.15E-05    4  0.165360  3 5.5000        4 M5 
-TeegardensStar   35227046884571776  43.26964248 0.074588680  16.864373820 0.076965086 260.98844070 0.093426720  3.832 3429.08282700 0.087942876 -3805.54112300 0.083260420 12.2631030  860.73987 15.318630  317.854600 10.790128  665.36365 1.30428970    29 0  438 0   410 Future yes   131 0   335 0  205 Future 2800     4 0.0942 0.0090 4 0.1121 0.0041 4 6.95E-04    1.18E-05    4              5.5000        4 M7 
-GJ9066           76868614540049408  30.05898705 0.054485697  13.044071200 0.049546370 223.73208720 0.069856286  4.470 1096.45848600 0.066713830 -1771.52614500 0.056617845 10.6810620 1323.03400 12.571853  439.254060  9.383672  850.21260 1.86993150   846 0 1777 0   932 Future yes  1079 0  1544 0  466 Future 3100     4 0.1596 0.0101 4 0.1740 0.0057 4 0.002518854 3.32E-05    4  0.089351  3 5.5000        4 M5 
-TRAPPIST-1     2635476908753563008 346.62652160 0.061557950  -5.043528319 0.053622354  80.21231613 0.071605740 12.467  930.78752260 0.086769050  -479.03754100 0.070487420 15.6225540  773.16610 19.005802   28.602777 14.103951  554.76220 1.05056820  1642 0 4012 0  2371 Future yes  2235 0  3419 0 1185 Future 2500     4 0.1024 0.0094 4 0.1199 0.0048 4 5.06E-04    5.62E-06    4              5.5000        4 M8 
-K2-65          2613211076737129856 333.21257160 0.016270982 -10.926188170 0.012934781  15.84676931 0.021315027 63.104  180.33446260 0.017907763  -183.02524760 0.016144417 10.4178705 4374.28660 10.931440 1404.721000  9.749630 2453.93260 0.91384536 -2183 0 4999 0  7184 Both   yes  -162 0  3879 0 4043 Both                                                                                                     G  
-K2-155          145333927996558976  65.46964392 0.013979885  21.353252640 0.007600433  13.71130975 0.015370281 72.932  200.18083680 0.018003514   -76.77463483 0.012836321 12.2415660 6211.53500 13.026498 1349.321700 11.371969 3446.90500 1.10353760 -4999 0 3118 0  8119 Both   yes -4999 0 -1251 0 3749 Past   4100     4 0.5428 0.0195 4 0.5372 0.0146 4 0.07346464  0.001757112 4 -0.272385  3 5.0000        4 K  
-K2-240         6257625719430982016 227.84936320 0.018844258 -17.875453740 0.024022924  13.69055580 0.023920728 73.043  -53.55758845 0.029006284   -52.39102954 0.032093853 12.6043160  653.36600 13.564121  180.789380 11.632039  300.03160 1.13455180 -4999 0 4999 0 10000 Both   yes -4999 0  4309 2 9310 Both   3823 157 1 0.5610 0.0200 1 0.5670 0.0170 1 0.06192     0.01397     1 -0.070437  3 4.6791 0.0104 1 M0 
+Ross 128        3796072592206250624 176.9376880 0.0273599   0.7991200 0.0198370 296.3053 0.0302  3.38  607.2991 0.0343 -1223.0284 0.0226  9.60 1360.63 11.36  659.64  8.33 1606.42 1.083 -3057 0 -900 0  2158 Past   yes -2517 0 -1440 0 1078 Past   3100 ---   4   0.202   0.011   4   0.215   0.007   4   0.003827   0.000072   4   0.1654 ---   3   5.500     ---   4 M5 
+Teegardens Star   35227046884571776  43.2696425 0.0745887  16.8643738 0.0769651 260.9884 0.0934  3.83 3429.0828 0.0879 -3805.5411 0.0833 12.26  860.74 15.32  317.85 10.79  665.36 1.304    29 0  438 0   410 Future yes   131 0   335 0  205 Future 2800 ---   4   0.094   0.009   4   0.112   0.004   4   0.000695   0.000012   4      --- --- ---   5.500     ---   4 M7 
+GJ 9066           76868614540049408  30.0589871 0.0544857  13.0440712 0.0495464 223.7321 0.0699  4.47 1096.4585 0.0667 -1771.5261 0.0566 10.68 1323.03 12.57  439.25  9.38  850.21 1.870   846 0 1777 0   932 Future yes  1079 0  1544 0  466 Future 3100 ---   4   0.160   0.010   4   0.174   0.006   4   0.002519   0.000033   4   0.0894 ---   3   5.500     ---   4 M5 
+TRAPPIST-1      2635476908753563008 346.6265216 0.0615580  -5.0435283 0.0536224  80.2123 0.0716 12.47  930.7875 0.0868  -479.0375 0.0705 15.62  773.17 19.01   28.60 14.10  554.76 1.051  1642 0 4012 0  2371 Future yes  2235 0  3419 0 1185 Future 2500 ---   4   0.102   0.009   4   0.120   0.005   4   0.000506   0.000006   4      --- --- ---   5.500     ---   4 M8 
+K2-65           2613211076737129856 333.2125716 0.0162710 -10.9261882 0.0129348  15.8468 0.0213 63.10  180.3345 0.0179  -183.0252 0.0161 10.42 4374.29 10.93 1404.72  9.75 2453.93 0.914 -2183 0 4999 0  7184 Both   yes  -162 0  3879 0 4043 Both    --- --- ---     ---     --- ---     ---     --- ---        ---        --- ---      --- --- ---     ---     --- --- G  
+K2-155           145333927996558976  65.4696439 0.0139799  21.3532526 0.0076004  13.7113 0.0154 72.93  200.1808 0.0180   -76.7746 0.0128 12.24 6211.54 13.03 1349.32 11.37 3446.91 1.104 -4999 0 3118 0  8119 Both   yes -4999 0 -1251 0 3749 Past   4100 ---   4   0.543   0.020   4   0.537   0.015   4   0.073465   0.001757   4  -0.2724 ---   3   5.000     ---   4 K  
+K2-240          6257625719430982016 227.8493632 0.0188443 -17.8754537 0.0240229  13.6906 0.0239 73.04  -53.5576 0.0290   -52.3910 0.0321 12.60  653.37 13.56  180.79 11.63  300.03 1.135 -4999 0 4999 0 10000 Both   yes -4999 0  4309 2 9310 Both   3823 157   1   0.561   0.020   1   0.567   0.017   1   0.061920   0.013970   1  -0.0704 ---   3   4.679   0.010   1 M0 
